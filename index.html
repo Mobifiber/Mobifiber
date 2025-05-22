@@ -7,26 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Application Structure Plan: Narrative flow designed to persuade potential customers.
-    1. Hero: Campaign title, core message of urgency, countdown.
-    2. What's the Deal?: Briefly explain "Tháng Vàng".
-    3. Key Offers: Visually distinct cards for each major promotion (price, free installation, bonus months).
-    4. Why MobiFiber?: General benefits (speed, stability, support).
-    5. How to Join?: Simple steps to register.
-    6. Don't Miss Out (Minigame & Final CTA): Encourage engagement and immediate action.
-    This structure aims to quickly convey value and scarcity, guiding the user towards conversion, reflecting the goals of the marketing plan.
-    -->
-
-    <!-- Visualization & Content Choices:
-    - Campaign Title/Slogan: Goal: Inform, Attract. Method: Large HTML text. Justification: Immediate brand/campaign recognition. NO SVG/Mermaid.
-    - Countdown Timer: Goal: Create Urgency. Method: JS updating HTML. Justification: Key tactic from source. NO SVG/Mermaid.
-    - Key Offers (150k/tháng, Miễn phí lắp đặt, Tặng 2 tháng): Goal: Inform, Persuade. Method: HTML/Tailwind cards with Unicode icons (💰, 🛠️, 🎁). Justification: Clearly presents core benefits. NO SVG/Mermaid.
-    - General Benefits Icons (Speed, Stability, Support): Goal: Inform. Method: Unicode icons (⚡, 🛡️, 💬) with text. Justification: Adds value proposition. NO SVG/Mermaid.
-    - How to Register Steps: Goal: Organize. Method: Numbered list (HTML/CSS). Justification: Clear action path. NO SVG/Mermaid.
-    - Chart.js Donut Chart (Offer Breakdown - Illustrative): Goal: Compare (conceptual breakdown of value). Method: Chart.js Canvas. Data: Illustrative percentages for "Discount", "Free Installation Value", "Bonus Months Value". Justification: Fulfills chart requirement with a simple visual, even if data is conceptual for this marketing plan. Label wrapping and tooltip config included. NO SVG/Mermaid.
-    - All textual content is derived or synthesized from the "Kế hoạch Chiến dịch Tháng vàng MobiFiber".
-    -->
-
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -122,7 +102,7 @@
             <div class="space-x-4">
                 <a href="#offers" class="text-gray-700 hover:mobifiber-yellow">Ưu Đãi</a>
                 <a href="#why" class="text-gray-700 hover:mobifiber-yellow">Lợi Ích</a>
-                <a href="#register" class="mobifiber-orange-cta-bg text-white font-semibold py-2 px-4 rounded-md hover:shadow-lg transition-all">Đăng Ký Ngay</a>
+                <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mobifiber-orange-cta-bg text-white font-semibold py-2 px-4 rounded-md hover:shadow-lg transition-all">Đăng Ký Ngay</a>
             </div>
         </div>
     </nav>
@@ -142,7 +122,7 @@
                     <div class="countdown-item"><div id="seconds" class="countdown-number">00</div><div class="countdown-label">Giây</div></div>
                 </div>
                 <p class="text-xl font-bold mb-8">"Săn ngay MobiFiber - Ưu đãi có hạn!"</p>
-                <a href="#register" class="mobifiber-orange-cta-bg text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mobifiber-orange-cta-bg text-white font-bold py-4 px-10 rounded-lg text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all inline-block">
                     Đăng Ký Ngay Hôm Nay!
                 </a>
             </div>
@@ -165,17 +145,20 @@
                     <div class="card text-center">
                         <div class="icon-placeholder mobifiber-yellow">💰</div>
                         <h3 class="text-2xl font-bold mb-3 mobifiber-blue">Chỉ 150.000đ/tháng</h3>
-                        <p class="text-gray-600">Trải nghiệm internet cáp quang siêu tốc với mức giá không tưởng. Lướt web, xem phim, chơi game thả ga!</p>
+                        <p class="text-gray-600 mb-4">Trải nghiệm internet cáp quang siêu tốc với mức giá không tưởng. Lướt web, xem phim, chơi game thả ga!</p>
+                        <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mt-auto mobifiber-orange-cta-bg hover:bg-orange-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-150">Nhận Ưu Đãi Này</a>
                     </div>
                     <div class="card text-center">
                         <div class="icon-placeholder mobifiber-yellow">🛠️</div>
                         <h3 class="text-2xl font-bold mb-3 mobifiber-blue">MIỄN PHÍ Lắp Đặt</h3>
-                        <p class="text-gray-600">Tiết kiệm 100% chi phí lắp đặt ban đầu. Đội ngũ kỹ thuật chuyên nghiệp sẵn sàng hỗ trợ bạn.</p>
+                        <p class="text-gray-600 mb-4">Tiết kiệm 100% chi phí lắp đặt ban đầu. Đội ngũ kỹ thuật chuyên nghiệp sẵn sàng hỗ trợ bạn.</p>
+                        <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mt-auto mobifiber-orange-cta-bg hover:bg-orange-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-150">Nhận Ưu Đãi Này</a>
                     </div>
                     <div class="card text-center">
                         <div class="icon-placeholder mobifiber-yellow">🎁</div>
                         <h3 class="text-2xl font-bold mb-3 mobifiber-blue">TẶNG NGAY 2 THÁNG CƯỚC</h3>
-                        <p class="text-gray-600">Khi thanh toán trước 6 tháng cước, nhận thêm 2 tháng sử dụng hoàn toàn miễn phí. Nhân đôi niềm vui!</p>
+                        <p class="text-gray-600 mb-4">Khi thanh toán trước 6 tháng cước, nhận thêm 2 tháng sử dụng hoàn toàn miễn phí. Nhân đôi niềm vui!</p>
+                        <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mt-auto mobifiber-orange-cta-bg hover:bg-orange-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-150">Nhận Ưu Đãi Này</a>
                     </div>
                 </div>
             </div>
@@ -221,29 +204,13 @@
         </section>
 
         <section id="register" class="py-16">
-            <div class="container mx-auto px-6">
+            <div class="container mx-auto px-6 text-center">
                 <h2 class="section-title mobifiber-blue">Đăng Ký <span class="mobifiber-yellow">Dễ Dàng</span></h2>
-                <p class="section-subtitle">Chỉ với vài bước đơn giản, bạn đã có thể sở hữu ngay gói cước siêu ưu đãi từ MobiFiber.</p>
-                <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-xl">
-                    <form id="registrationForm">
-                        <div class="mb-6">
-                            <label for="name" class="block text-gray-700 font-semibold mb-2">Họ và Tên:</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition" placeholder="Nguyễn Văn A" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Số Điện Thoại:</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition" placeholder="09xxxxxxxx" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="address" class="block text-gray-700 font-semibold mb-2">Địa Chỉ Lắp Đặt:</label>
-                            <input type="text" id="address" name="address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố" required>
-                        </div>
-                        <button type="submit" class="w-full mobifiber-orange-cta-bg text-white font-bold py-4 px-6 rounded-lg text-lg shadow-md hover:shadow-lg transform hover:scale-102 transition-all">
-                            Đăng Ký Ngay! Số Lượng Có Hạn!
-                        </button>
-                    </form>
-                    <div id="formMessage" class="mt-4 text-center"></div>
-                </div>
+                <p class="section-subtitle">Chỉ với vài bước đơn giản, bạn đã có thể sở hữu ngay gói cước siêu ưu đãi từ MobiFiber. Nhấp vào nút bên dưới để điền thông tin đăng ký!</p>
+                <a href="https://forms.gle/PZha2gbChNtwViMg7" target="_blank" class="mobifiber-orange-cta-bg text-white font-bold py-4 px-8 rounded-lg text-lg shadow-md hover:shadow-lg transform hover:scale-102 transition-all inline-block">
+                    Điền Form Đăng Ký Ngay!
+                </a>
+                <p class="mt-4 text-gray-600">Số lượng có hạn – Đừng bỏ lỡ!</p>
             </div>
         </section>
 
@@ -270,8 +237,10 @@
         // Countdown Timer Logic
         function startCountdown(durationInDays) {
             const countdownEndDate = new Date();
+            // Lấy thời gian hiện tại và thêm số ngày khuyến mãi
+            // Ví dụ: Ngày 23/05/2025 + 45 ngày = 07/07/2025
             countdownEndDate.setDate(countdownEndDate.getDate() + durationInDays);
-            countdownEndDate.setHours(23, 59, 59, 999); // End of the last day
+            countdownEndDate.setHours(23, 59, 59, 999); // Kết thúc vào cuối ngày cuối cùng
 
             const daysEl = document.getElementById('days');
             const hoursEl = document.getElementById('hours');
@@ -288,7 +257,6 @@
                     hoursEl.textContent = '00';
                     minutesEl.textContent = '00';
                     secondsEl.textContent = '00';
-                    // Optionally display a "Campaign Ended" message
                     return;
                 }
 
@@ -306,39 +274,18 @@
             const interval = setInterval(updateCountdown, 1000);
         }
         
-        // Start countdown for 30 days (example duration, can be set from campaign plan)
-        // The plan suggests 1-2 months. Let's use 45 days as an average.
+        // Bắt đầu đếm ngược trong 45 ngày (ví dụ, bạn có thể điều chỉnh theo thời gian thực của chiến dịch)
         startCountdown(45); 
 
-        // Registration Form Handling
-        const registrationForm = document.getElementById('registrationForm');
-        const formMessage = document.getElementById('formMessage');
-        if (registrationForm) {
-            registrationForm.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-                const address = document.getElementById('address').value;
-
-                if (name && phone && address) {
-                    formMessage.innerHTML = '<p class="text-green-600 font-semibold">Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.</p>';
-                    registrationForm.reset();
-                    // In a real application, you would send this data to a server.
-                    console.log('Registration Data:', { name, phone, address });
-                } else {
-                    formMessage.innerHTML = '<p class="text-red-600 font-semibold">Vui lòng điền đầy đủ thông tin.</p>';
-                }
-                setTimeout(() => { formMessage.innerHTML = ''; }, 5000);
-            });
-        }
-
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for navigation links (Code này vẫn giữ nguyên, nhưng sẽ không cuộn đến #register cũ nữa)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                // Chỉ ngăn chặn hành động mặc định nếu href là một ID trong trang
+                // Nếu href là link Google Form, nó sẽ mở tab mới mà không bị chặn
                 const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
+                if (targetId.startsWith('#') && document.querySelector(targetId)) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
@@ -353,13 +300,13 @@
                 type: 'doughnut',
                 data: {
                     labels: [
-                        'Giá trị Giảm giá Cước', // Example: 50%
-                        ['Giá trị Miễn phí', 'Lắp đặt'], // Example: 20%
-                        ['Giá trị 2 Tháng', 'Cước Tặng'] // Example: 30%
+                        'Giá trị Giảm giá Cước',
+                        ['Giá trị Miễn phí', 'Lắp đặt'],
+                        ['Giá trị 2 Tháng', 'Cước Tặng']
                     ],
                     datasets: [{
                         label: 'Phân Bổ Giá Trị Ưu Đãi',
-                        data: [50, 20, 30], // Illustrative data
+                        data: [50, 20, 30], // Số liệu minh họa
                         backgroundColor: [
                             '#FFC107', // MobiFiber Yellow
                             '#0D6EFD', // MobiFiber Blue
@@ -383,7 +330,6 @@
                                 font: { size: 12 },
                                 boxWidth: 20,
                                 padding: 15,
-                                 // Handle multi-line labels in legend
                                 generateLabels: function(chart) {
                                     const data = chart.data;
                                     if (data.labels.length && data.datasets.length) {
@@ -428,13 +374,13 @@
                             }
                         },
                         title: {
-                            display: false, // Set to true to display a title if needed
+                            display: false,
                             text: 'Minh Họa Giá Trị Ưu Đãi (%)',
                             padding: { top: 10, bottom: 10 },
                             font: { size: 16, weight: 'bold' }
                         }
                     },
-                    cutout: '60%' // Makes it a donut chart
+                    cutout: '60%'
                 }
             });
         } else {
